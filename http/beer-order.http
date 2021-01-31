@@ -1,0 +1,2 @@
+GET http://localhost:8081/api/v1/customers/f49339be-beb1-43b4-b4a2-33f48b38aab0/orders
+Accept: application/json

@@ -18,8 +18,8 @@
 package dev.marcosalmeida.beerorderservice.services;
 
 
-import dev.marcosalmeida.beerorderservice.web.model.BeerOrderDto;
-import dev.marcosalmeida.beerorderservice.web.model.BeerOrderPagedList;
+import dev.marcosalmeida.beerorderservice.model.BeerOrderDto;
+import dev.marcosalmeida.beerorderservice.model.BeerOrderPagedList;
 import org.springframework.data.domain.Pageable;
 
 import java.util.UUID;

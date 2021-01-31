@@ -15,7 +15,7 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package dev.marcosalmeida.beerorderservice.web.model;
+package dev.marcosalmeida.beerorderservice.model;
 
 public enum OrderStatusEnum {
     NEW, READY, PICKED_UP

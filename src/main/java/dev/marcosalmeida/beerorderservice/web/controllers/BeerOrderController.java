@@ -17,9 +17,9 @@
 
 package dev.marcosalmeida.beerorderservice.web.controllers;
 
+import dev.marcosalmeida.beerorderservice.model.BeerOrderDto;
+import dev.marcosalmeida.beerorderservice.model.BeerOrderPagedList;
 import dev.marcosalmeida.beerorderservice.services.BeerOrderService;
-import dev.marcosalmeida.beerorderservice.web.model.BeerOrderDto;
-import dev.marcosalmeida.beerorderservice.web.model.BeerOrderPagedList;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
