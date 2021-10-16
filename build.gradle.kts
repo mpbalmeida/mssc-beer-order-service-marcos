@@ -14,11 +14,12 @@ java {
 
 repositories {
     mavenCentral()
+    maven("https://oss.sonatype.org/content/repositories/releases/")
 }
 
 dependencyManagement {
     imports {
-        mavenBom("br.com.faroltech:mssc-brewery-bom:1.0.3")
+        mavenBom("br.com.faroltech:mssc-brewery-bom:1.0.4")
     }
 }
 
@@ -31,6 +32,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-artemis")
+    implementation("org.springframework.statemachine:spring-statemachine-core:2.2.1.RELEASE")
 
     implementation("org.mapstruct:mapstruct")
 
