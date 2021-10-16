@@ -15,7 +15,7 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package dev.marcosalmeida.beerorderservice.model;
+package dev.marcosalmeida.brewery.model;
 
 public enum OrderStatusEnum {
     NEW, VALIDATED, VALIDATION_EXCEPTION, ALLOCATED, ALLOCATION_EXCEPTION, PENDING_INVENTORY, PICKED_UP, DELIVERED, DELIVERED_EXCEPTION

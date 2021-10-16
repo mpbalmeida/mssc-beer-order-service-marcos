@@ -15,27 +15,38 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package dev.marcosalmeida.beerorderservice.model;
+package dev.marcosalmeida.brewery.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
-public class CustomerDto extends BaseItem {
+@AllArgsConstructor
+@SuperBuilder
+public class BaseItem {
 
-    @Builder
-    public CustomerDto(UUID id, Integer version, OffsetDateTime createdDate, OffsetDateTime lastModifiedDate, String name) {
-        super(id, version, createdDate, lastModifiedDate);
-        this.name = name;
-    }
+    @JsonProperty("id")
+    private UUID id = null;
 
-    private String name;
+    @JsonProperty("version")
+    private Integer version = null;
 
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+    @JsonProperty("createdDate")
+    private OffsetDateTime createdDate = null;
+
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+    @JsonProperty("lastModifiedDate")
+    private OffsetDateTime lastModifiedDate = null;
 }
+

@@ -18,13 +18,13 @@
 package dev.marcosalmeida.beerorderservice.services;
 
 import dev.marcosalmeida.beerorderservice.domain.BeerOrder;
-import dev.marcosalmeida.beerorderservice.domain.Customer;
 import dev.marcosalmeida.beerorderservice.domain.BeerOrderStatusEnum;
-import dev.marcosalmeida.beerorderservice.model.BeerOrderDto;
-import dev.marcosalmeida.beerorderservice.model.BeerOrderPagedList;
+import dev.marcosalmeida.beerorderservice.domain.Customer;
 import dev.marcosalmeida.beerorderservice.repositories.BeerOrderRepository;
 import dev.marcosalmeida.beerorderservice.repositories.CustomerRepository;
 import dev.marcosalmeida.beerorderservice.web.mapper.BeerOrderMapper;
+import dev.marcosalmeida.brewery.model.BeerOrderDto;
+import dev.marcosalmeida.brewery.model.BeerOrderPagedList;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.data.domain.Page;

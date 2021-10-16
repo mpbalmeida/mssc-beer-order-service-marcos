@@ -18,7 +18,7 @@
 package dev.marcosalmeida.beerorderservice.web.mapper;
 
 import dev.marcosalmeida.beerorderservice.domain.BeerOrder;
-import dev.marcosalmeida.beerorderservice.model.BeerOrderDto;
+import dev.marcosalmeida.brewery.model.BeerOrderDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

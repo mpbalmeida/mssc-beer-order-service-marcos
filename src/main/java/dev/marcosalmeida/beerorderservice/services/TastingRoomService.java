@@ -2,10 +2,10 @@ package dev.marcosalmeida.beerorderservice.services;
 
 import dev.marcosalmeida.beerorderservice.bootstrap.BeerOrderBootStrap;
 import dev.marcosalmeida.beerorderservice.domain.Customer;
-import dev.marcosalmeida.beerorderservice.model.BeerOrderDto;
-import dev.marcosalmeida.beerorderservice.model.BeerOrderLineDto;
 import dev.marcosalmeida.beerorderservice.repositories.BeerOrderRepository;
 import dev.marcosalmeida.beerorderservice.repositories.CustomerRepository;
+import dev.marcosalmeida.brewery.model.BeerOrderDto;
+import dev.marcosalmeida.brewery.model.BeerOrderLineDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;

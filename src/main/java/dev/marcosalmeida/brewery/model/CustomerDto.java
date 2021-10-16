@@ -15,31 +15,19 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package dev.marcosalmeida.beerorderservice.model;
+package dev.marcosalmeida.brewery.model;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-
-import java.time.OffsetDateTime;
-import java.util.UUID;
+import lombok.experimental.SuperBuilder;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class OrderStatusUpdate extends BaseItem {
+@SuperBuilder
+public class CustomerDto extends BaseItem {
 
-    @Builder
-    public OrderStatusUpdate(UUID id, Integer version, OffsetDateTime createdDate, OffsetDateTime lastModifiedDate,
-                             UUID orderId, String orderStatus, String customerRef) {
-        super(id, version, createdDate, lastModifiedDate);
-        this.orderId = orderId;
-        this.orderStatus = orderStatus;
-        this.customerRef = customerRef;
-    }
+    private String name;
 
-    private UUID orderId;
-    private String customerRef;
-    private String orderStatus;
 }

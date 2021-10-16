@@ -19,7 +19,7 @@ repositories {
 
 dependencyManagement {
     imports {
-        mavenBom("br.com.faroltech:mssc-brewery-bom:1.0.4")
+        mavenBom("br.com.faroltech:mssc-brewery-bom:1.0.5")
     }
 }
 
@@ -32,7 +32,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-artemis")
-    implementation("org.springframework.statemachine:spring-statemachine-core:2.2.1.RELEASE")
+    implementation("org.springframework.statemachine:spring-statemachine-core")
 
     implementation("org.mapstruct:mapstruct")
 
