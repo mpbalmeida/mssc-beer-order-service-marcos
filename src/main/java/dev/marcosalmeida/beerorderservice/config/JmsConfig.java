@@ -16,6 +16,10 @@ public class JmsConfig {
         var converter = new MappingJackson2MessageConverter();
         converter.setTargetType(MessageType.TEXT);
         converter.setTypeIdPropertyName("_type");
+        // Use this option to avoid full qualified classes
+//        Map<String, Class<?>> typeIdMappings = new HashMap<>();
+//        typeIdMappings.put("order", BeerOrder.class);
+//        converter.setTypeIdMappings(typeIdMappings);
 
         return converter;
     }
